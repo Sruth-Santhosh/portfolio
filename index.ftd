@@ -14,14 +14,19 @@ cta-text-1-url: index.html
 cta-text-2-url: index.html
 cta-text-3-url: index.html
 
--- hero-1.hero-1: sruthi santhosh
-cta-button-1: college
-link-1: https://www.resume.com/
-cta-button-2: experience
-link-2: https://calendly.com/
-cover: $assets.files.assets.AA SSC.jpg
+-- hero-1.hero-1: SRUTHI SANTHOSH
+cta-button-1:RESUME
+link-1:https://drive.google.com/file/d/14XmlzSAqT2RenVdkwZQxWTfgw5SNwj7Q/view?usp=drivesdk
+cta-button-2: COLLEGE
+link-2:https://lbt.ac.in/
+cover: $assets.files.assets.image.jpg
 
-I AM SRUTHI SANTHSOH.COMPUTER SCIENCE UNDERGRADUATE PASSIONATE ABOUT TECHNOLOGY.
+I AM SRUTHI SANTHSOH.
+COMPUTER SCIENCE UNDERGRADUATE PASSIONATE ABOUT TECHNOLOGY.
+THIS IS PORTFOLIO.WELCOME TO THE WORLD OF INNOVATION.
+STAY TUNED FOR MORE UPDATES........
+A BTech computer science second year student.
+I am actively searching for job.Multitasking behaviour and vibrant aptitude makes me apt for a perfect worker.
 
 
 -- end: lib.page

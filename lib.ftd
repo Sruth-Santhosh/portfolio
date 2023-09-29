@@ -15,14 +15,15 @@ optional string cta-text-8:
 optional string cta-text-9:  
 optional string cta-text-10: 
 optional string cta-button-1: 
-optional string cta-button-2: 
+optional string cta-button-2:
+optional string text: 
 children c:
 
 -- ftd.column:
 width: fill-container
 types: $holy-angel-typography.types
 colors: $fastn-cs-tail.main
-background.linear-gradient: $lg
+background.solid:yellow
 
 -- ftd.column:
 width: fill-container
@@ -32,12 +33,12 @@ children: $page.c
 
 -- footer:
 icon-1: $assets.files.assets.linkedIn.png
-url-1: https://www.linkedin.com/company/trizwit/
+url-1: https://in.linkedin.com/in/sruthi-santhosh-b25128268
 icon-2: $assets.files.assets.twit.svg
-url-2: https://twitter.com/trizwit
+url-2: https://twitter.com/SruthiSan2002
 icon-3: $assets.files.assets.github.svg
-url-3: https://github.com/Trizwit
-
+url-3: https://github.com/Sruth-Santhosh
+text:build by
 -- end: ftd.column
 
 -- end: page
@@ -170,21 +171,21 @@ margin-vertical.px: 10
 margin-horizontal.px: 10
 text-align: center
 align-self: center
-color: white
+color: red
 
 -- end: ftd.row
 
 -- ftd.image: 
 if: { !header-mobile.open }
 src: $assets.files.assets.hamburger-menu.svg
-height.fixed.px: 32
+height.fixed.px: 22
 align-self: center
 $on-click$: $ftd.set-bool($a = $header-mobile.open, v = true)
 
 -- ftd.image: 
 if: { header-mobile.open }
 src: $assets.files.assets.cross.svg
-height.fixed.px: 32
+height.fixed.px: 22
 align-self: center
 $on-click$: $ftd.set-bool($a = $header-mobile.open, v = false)
 
@@ -204,7 +205,7 @@ role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
-color: white
+color: pink
 link: $header-mobile.cta-text-1-url
 
 -- ftd.text: $header-mobile.cta-text-2
@@ -212,7 +213,7 @@ role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
-color: white
+color: yellow
 link: $header-mobile.cta-text-2-url
 
 
@@ -221,7 +222,7 @@ role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
-color: white
+color: blue
 link: $header-mobile.cta-text-3-url
 
 -- end: ftd.column
@@ -281,7 +282,7 @@ margin-vertical.px: 10
 margin-horizontal.px: 10
 text-align: center
 align-self: center
-color: white
+color: pink
 
 -- ftd.row:
 width: fill-container
@@ -293,7 +294,7 @@ role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
-color: white
+color: pink
 link: $header-desktop.cta-text-1-url
 
 
@@ -364,22 +365,23 @@ ftd.image-src icon-2:
 string url-2:
 ftd.image-src icon-3:
 string url-3:
-
+string text:
 -- ftd.column:
 align-self: center
-align-content: center
+align-content: left
 width: fill-container
 margin-vertical.vh: 6
 
 -- ftd.row:
 width.fixed.percent: 90
 align-self: center
-align-content: center
+align-content: left
 spacing.fixed.px: 24
 padding-bottom.px: 24
 border-bottom-width.px: 2
 
 -- ftd.image:
+background.solid:
 src: $footer.icon-1
 height.fixed.px: 32
 width.fixed.px: 32
@@ -403,7 +405,7 @@ link: $footer.url-3
 margin-top.vh: 1
 spacing.fixed.vh: 0.9
 
--- ftd.text: Made with 
+-- ftd.text: $footer.text 
 role: $inherited.types.label-large
 style: semi-bold
 color: white
